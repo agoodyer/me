@@ -1,0 +1,204 @@
+{
+  "name": "Aidan Goodyer",
+  "role": "Software engineer",
+  "intro": "I’m a software engineer who likes following interesting problems wherever they lead.",
+  "portrait": {
+    "src": "assets/images/aidan-goodyer.jpg",
+    "alt": "Aidan Goodyer"
+  },
+  "links": [
+    {
+      "label": "Email",
+      "url": "mailto:aidangoodyer@gmail.com",
+      "icon": "assets/icons/social/email.svg"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/agoodyer",
+      "icon": "assets/icons/social/github.svg"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/aidan-goodyer/",
+      "icon": "assets/icons/social/linkedin.svg"
+    },
+    {
+      "label": "Bluesky",
+      "url": "https://goodyera.bsky.social",
+      "icon": "assets/icons/social/bluesky.svg"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/aidangoodyer",
+      "icon": "assets/icons/social/x.svg"
+    }
+  ],
+  "about": [
+    [
+      "I started programming almost a decade ago by moving an orange cat around in ",
+      { "text": "Scratch", "url": "https://en.wikipedia.org/wiki/Scratch_(programming_language)" },
+      ". I've been finding new corners of computing to poke at ever since."
+    ],
+    [
+      "I tend to gravitate toward problems with some ambiguity or unfamiliar territory in them. That curiosity has taken me through infrastructure, distributed applications, machine learning, and the occasional robot."
+    ],
+    [
+      "I studied Software Engineering at ",
+      { "text": "McMaster University", "url": "https://www.eng.mcmaster.ca/cas/" },
+      ". These days, I'm working in Toronto and still finding plenty to explore."
+    ]
+  ],
+  "experience": [
+    {
+      "company": "Scotiabank",
+      "role": "Software Engineer",
+      "period": "2026–Present",
+      "url": "https://www.scotiabank.com/ca/en/personal.html",
+      "logo": "assets/images/companies/scotiabank.png",
+      "description": "Building reusable CI/CD workflows and platform tooling with Terraform, GitHub Actions, Kubernetes, and Google Cloud.",
+      "tags": ["Terraform", "GitHub Actions", "Kubernetes", "GCP"]
+    },
+    {
+      "company": "ApplyBoard",
+      "role": "Software Engineer Co-op",
+      "period": "May–Aug 2025",
+      "url": "https://www.applyboard.com/",
+      "logo": "assets/images/companies/applyboard.svg",
+      "description": "Built backend services for streaming application data using TypeScript and AWS CDK, replacing a legacy integration and reducing maintenance costs. Rolled out VPC networking and distributed tracing with AWS X-Ray across all services.",
+      "tags": ["TypeScript", "Node.js", "AWS CDK", "GitHub Actions"]
+    },
+    {
+      "company": "Scotiabank",
+      "role": "Software Engineer Intern",
+      "period": "Jan–Dec 2024",
+      "url": "https://www.scotiabank.com/ca/en/personal.html",
+      "logo": "assets/images/companies/scotiabank.png",
+      "description": "Developed CI/CD platform features in Go and Java Spring used by dozens of developer teams. Led migration work for several on-premises services and developed ETLs for fraud monitoring.",
+      "tags": ["Java", "Go", "Python"]
+    },
+    {
+      "company": "McMaster AI Society",
+      "hidden": true,
+      "role": "Workshop Developer",
+      "period": "2023–Present",
+      "url": "https://www.mcmasterai.com/",
+      "logo": "assets/images/companies/mcmaster-ai.svg",
+      "description": "Prepared and presented workshops on machine learning fundamentals, with practical demos using PyTorch, scikit-learn, and TensorFlow.",
+      "tags": ["Python", "PyTorch", "scikit-learn", "TensorFlow"]
+    },
+    {
+      "company": "BlackBerry",
+      "role": "Software Developer Co-op",
+      "period": "Apr–Aug 2022",
+      "url": "https://www.blackberry.com/us/en",
+      "logo": "assets/images/companies/blackberry.png",
+      "description": "Contributed to an internal monitoring tool, building front-end components with Vue and Nuxt and integrating REST APIs to display employee status data.",
+      "tags": ["JavaScript", "Vue", "Nuxt", "SQL"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Chive",
+      "url": "https://chive.pages.dev/",
+      "secondaryLinks": [
+        {
+          "label": "Source code",
+          "url": "https://github.com/chive-recipes/chive",
+          "icon": "assets/icons/social/github.svg"
+        }
+      ],
+      "image": "assets/images/projects/chive.png",
+      "imageAlt": "Chive recipe discovery application",
+      "description": "An open-source recipe app built on the AT Protocol. Recipes stay in their authors’ repositories rather than an application database, while the static client discovers and reads them directly from the network.",
+      "tags": ["TypeScript", "Preact", "AT Protocol", "Cloudflare Pages"]
+    },
+    {
+      "title": "InfraRAT",
+      "url": "projects/infrarat/",
+      "content": "content/projects/infrarat.md",
+      "secondaryLinks": [
+        {
+          "label": "Source code",
+          "url": "https://github.com/OCD-Rats-Capstone/InfraRAT",
+          "icon": "assets/icons/social/github.svg"
+        },
+        {
+          "label": "Research poster",
+          "url": "assets/files/infrarat-research-poster.pdf",
+          "icon": "assets/icons/external-link.svg",
+          "showOnProjectCard": false,
+          "newTab": true
+        }
+      ],
+      "image": "assets/images/projects/infrarat.png",
+      "imageAlt": "InfraRAT mouse mascot surrounded by colourful directional arrows",
+      "description": "A research platform for exploring 20,000+ experimental sessions in behavioural neuroscience, built with McMaster’s Szechtman Lab. Normalized session metadata connects back to original research files for querying and analysis.",
+      "tags": ["Python", "FastAPI", "PostgreSQL", "Docker"]
+    },
+    {
+      "title": "BirdScout",
+      "url": "projects/birdscout/",
+      "content": "content/projects/birdscout.md",
+      "secondaryLinks": [
+        {
+          "label": "Source code",
+          "url": "https://github.com/agoodyer/BirdScout",
+          "icon": "assets/icons/social/github.svg"
+        }
+      ],
+      "image": "assets/images/projects/birdscout.jpg",
+      "imageAlt": "BirdScout field journal displayed on a phone against a blue sky",
+      "description": "A mobile app for identifying, recording, and exploring bird sightings, built to handle uncertain species identification, persistent sighting records, and location privacy.",
+      "tags": ["System Design", "Requirements", "TypeScript", "React Native"]
+    },
+    {
+      "title": "GoTracer",
+      "url": "https://agoodyer.github.io/GoTracer/",
+      "secondaryLinks": [
+        {
+          "label": "Source code",
+          "url": "https://github.com/agoodyer/raytracer",
+          "icon": "assets/icons/social/github.svg"
+        }
+      ],
+      "image": "assets/images/projects/raytracer.png",
+      "imageAlt": "A scene rendered by the raytracing engine",
+      "description": "A 3D raytracer built using only the Go standard library. Bounding volume hierarchies and multithreading produced a 36× speedup over the naïve implementation.",
+      "tags": ["Go", "Concurrency", "Graphics", "WebAssembly"]
+    },
+    {
+      "title": "TicTacToeBot",
+      "url": "projects/tictactoebot/",
+      "content": "content/projects/tictactoebot.md",
+      "secondaryLinks": [
+        {
+          "label": "Source code",
+          "url": "https://github.com/agoodyer/TicTacToeBot",
+          "icon": "assets/icons/social/github.svg"
+        }
+      ],
+      "image": "assets/images/projects/tictactoe.png",
+      "imageAlt": "TicTacToeBot competition robot",
+      "description": "A fully wireless robot built for the 2023 MEC Senior Design Challenge. It achieved the fastest completion time and placed second overall.",
+      "tags": ["C++", "ESP32", "Arduino", "Robotics"]
+    },
+    {
+      "title": "Procedural island generator",
+      "hidden": true,
+      "url": "https://github.com/2AA4-W23/a4-urbanism-agoodyer",
+      "image": "assets/images/projects/island.jpg",
+      "imageAlt": "A procedurally generated island",
+      "description": "A program that generates islands from a Voronoi mesh and exports them to SVG or OBJ.",
+      "tags": ["Java", "Maven", "JUnit"]
+    },
+    {
+      "title": "Spotify Higher/Lower",
+      "hidden": true,
+      "url": "https://higherlower.agoodyer.com/",
+      "image": "assets/images/projects/higher-lower.png",
+      "imageAlt": "Spotify Higher/Lower game",
+      "description": "A game that asks players to guess how their favourite artists rank on global charts using data from Spotify.",
+      "tags": ["JavaScript", "Vue", "Spotify API"]
+    }
+  ]
+}
