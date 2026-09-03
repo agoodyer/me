@@ -318,6 +318,29 @@ const about = content.about
   })
   .join("\n          ");
 
+const sameAsLinks = visibleProfiles
+  .filter((item) => isExternal(item.url))
+  .map((item) => item.url);
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: content.name,
+  url: `${publicSiteUrl}/`,
+  image: `${publicSiteUrl}/${content.portrait.src}`,
+  jobTitle: content.role,
+  sameAs: sameAsLinks,
+};
+
+const personJsonLd = `
+    <script type="application/ld+json">
+${JSON.stringify(personSchema, null, 2)
+  .replace(/</g, "\\u003c")
+  .split("\n")
+  .map((line) => `      ${line}`)
+  .join("\n")}
+    </script>`;
+
 const html = `<!doctype html>
 <html lang="en">
   <head>
@@ -326,7 +349,7 @@ const html = `<!doctype html>
     <meta name="description" content="${escapeHtml(content.intro)}">
     <meta name="theme-color" content="#f8f7f3">
     <meta name="robots" content="index, follow">
-    <title>${escapeHtml(content.name)} — ${escapeHtml(content.role)}</title>${socialMeta}
+    <title>${escapeHtml(content.name)} — ${escapeHtml(content.role)}</title>${socialMeta}${personJsonLd}
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
     <link rel="alternate" type="text/plain" href="./llms.txt" title="LLM-readable site summary">
     <link rel="stylesheet" href="./styles.css?v=${stylesheetVersion}">
