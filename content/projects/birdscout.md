@@ -50,7 +50,7 @@ The mobile client accepts a photo and observation details, persists the submissi
       <span class="project-phone-button project-phone-button--volume-down" aria-hidden="true"></span>
       <span class="project-phone-button project-phone-button--power" aria-hidden="true"></span>
       <div class="project-phone-screen">
-        <video autoplay loop muted playsinline controls preload="metadata" aria-label="BirdScout classification flow, from camera capture to a species result">
+        <video autoplay loop muted playsinline preload="metadata" aria-hidden="true" tabindex="-1">
           <source src="assets/videos/birdscout-classification-demo.mp4" type="video/mp4">
         </video>
       </div>
@@ -64,7 +64,7 @@ The mobile client accepts a photo and observation details, persists the submissi
       <span class="project-phone-button project-phone-button--volume-down" aria-hidden="true"></span>
       <span class="project-phone-button project-phone-button--power" aria-hidden="true"></span>
       <div class="project-phone-screen">
-        <video autoplay loop muted playsinline controls preload="metadata" aria-label="BirdScout map, journal, and achievements flow">
+        <video autoplay loop muted playsinline preload="metadata" aria-hidden="true" tabindex="-1">
           <source src="assets/videos/birdscout-map-journal-achievements-demo.mp4" type="video/mp4">
         </video>
       </div>

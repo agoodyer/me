@@ -730,6 +730,12 @@ footer p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
+}
+
+/* These videos are non-interactive visual mockups; captions provide their text alternative. */
+.project-phone-screen video::-webkit-media-controls {
+  display: none !important;
 }
 
 .project-phone-button {
